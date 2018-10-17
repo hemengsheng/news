@@ -1,0 +1,70 @@
+/* pages/details/details.wxss */
+.obox{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.obox_top image{
+  width:750rpx;
+}
+.content{
+  width: 100%;
+  background:white;
+  border-radius: 60rpx;
+  margin-top: -80rpx;
+  padding-top: 60rpx;
+}
+.obox_title{
+  width: 96%;
+  padding: 10rpx 2% 10rpx 2%;
+  display: flex;
+  justify-content: center;
+}
+.obox_title text{
+  font-size: 42rpx;
+  margin-bottom: 10rpx;
+  font-weight: bold;
+}
+.obox_foot{
+   width: 85%;
+   padding: 10rpx 4% 10rpx 4%;
+   display: flex;
+   padding-top: 28rpx;
+   justify-content:space-between;
+}
+.obox_foot text{
+  font-size: 24rpx;
+  color: #aaa1a6;
+}
+.obx_news{
+  display: flex;
+  justify-content: center;
+}
+.wxParse .wxParse-p{
+   margin-bottom: 40rpx;
+   color: #000;
+   font-size: 32rpx;
+}
+.guzhang{
+  position: fixed;
+  bottom:20rpx;
+  right: 30rpx;
+}
+.guzhang image{
+  width: 120rpx;
+}
+.dianZan2{
+  width: 80rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 26rpx;
+  background: linear-gradient(#bd4de8, #ff2366);
+  border-radius: 18rpx;
+  opacity: 0;
+  position: fixed;
+  bottom: 45rpx;
+  right: 65rpx;
+}

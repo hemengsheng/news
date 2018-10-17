@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/canvas1/canvas1",
+    "pages/details/details"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#6a728d",
+    "navigationBarTitleText": "闻也实时资讯",
+    "navigationBarTextStyle": "white"
+  }
+}

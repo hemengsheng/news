@@ -1,0 +1,35 @@
+<!--pages/deal/deal.wxml-->
+<canvas canvas-id='share' style='width:375px;height:580px'  hidden='{{canvasHidden}}'></canvas> 
+<view class='container-main'>
+  <view class='point-img'>
+
+      <view class="point-container">
+        <view class="am-head">          
+          <view class='am-top'>闻也实时资讯</view>
+          <view class='am-time'><text>{{fbTime}}</text></view>
+        </view>
+        <view class='am-title'><text>{{title}}</text></view>
+        <view class='am-content'><text>{{synopsis}}</text></view>
+        <view class='am-source'>来源：<text>{{source}}</text></view>
+        <view class='am-line'></view>
+        <view class="content">
+          <view class='content_left'>
+            <image src='{{imgSrc}}'></image>
+          </view>
+          <view class='content_right'>
+            <view>识别二维码 查看更多资讯</view>
+          </view>
+        </view>
+   </view>
+       <view class='am-div'></view>
+  </view>
+</view>
+ 
+ <view class='am-footer'>
+      <view class="am-footerbd">
+      <button open-type="share" data-tag="share1">分享好友</button>
+        <!-- <button open-type="share" data-tag="share1" id="btn_share1">分享好友</button>
+        <!--<view class="am-btn-both"></view>
+        <!-- <button bindtap='saveImageToPhotosAlbum'>保存图片</button>-->
+      </view>
+  </view>

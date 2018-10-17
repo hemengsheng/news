@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view wx:for="{{datas}}" wx:for-index="index" wx:for-item="item" wx:key='*this'>
+      <view class='list'>
+        <view class='list_content'> 
+          <view  class='tit_top' bindtap='showhide' id="{{item.id}}">
+              <text>{{item.title}}</text>
+          </view>
+          <view class='tit_center {{showhide==item.id?"":"hidden"}}'>
+                <text>{{item.synopsis}}</text>
+                <text wx:if="{{item.isShow?true:false}}" bindtap='details' class='details' id='{{item.id}}'>查看详情>></text>
+          </view>
+          <view class='tit_foot'>
+            <text>{{item.source}}</text><text class='tit_foot_1'>{{item.newsTime}}</text>
+            <button  class='shareBtn' bindtap='onSaveImg' id='{{item.id}}'><!--index.wxml-->
+              <text class='iconfont icon-share'></text>
+            </button> 
+          </view>
+        </view>
+      </view>
+</view>
+<loading hidden="{{loadingHidden}}">
+     加载中...
+</loading>
+ <view class='foot'>
+  <text>{{text}}</text>
+ </view>

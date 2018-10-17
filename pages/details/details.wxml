@@ -1,0 +1,25 @@
+<!--pages/details/details.wxml-->
+<import src="../../wxParse/wxParse.wxml"/>
+<view class='obox'>
+    <view class='obox_top'>
+      <image src='{{datas.mainImg}}' mode='widthFix'></image>
+    </view>
+    <view class='content'>
+      <view  class='obox_title'>
+          <text>{{datas.title}}</text>
+      </view>
+      <view class='obox_foot'>
+          <text>{{datas.source}}</text>
+          <text>{{datas.createTime}}</text>
+      </view>
+
+     <view  class='wxParse'>
+         <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+      </view>
+
+      <view class='guzhang' bindtap='DianZan'>
+        <image animation="{{animation1}}" src='{{DZStyle}}' mode='widthFix'></image>
+        <view animation="{{animation2}}" class='dianZan2'>+{{ counts }}</view>   
+      </view>
+    </view>
+</view>
